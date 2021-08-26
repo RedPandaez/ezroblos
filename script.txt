@@ -1,0 +1,1487 @@
+if game.PlaceId == 3431407618 then
+	if game.Players.LocalPlayer.PlayerGui:FindFirstChild("GUI") then
+		game.Players.LocalPlayer.PlayerGui.GUI:Destroy()
+	end
+	
+	if game.Players.LocalPlayer.Character:FindFirstChild("@Alerts") then
+		local AlertText = Instance.new("Color3Value")
+		AlertText.Name = "press Z to open gui"
+		AlertText.Value = Color3.fromRGB(255,255,255)
+		AlertText.Parent = game.Players.LocalPlayer.Character["@Alerts"]
+	end
+
+	local GUI = Instance.new("ScreenGui")
+	local List = Instance.new("Frame")
+	local UICorner = Instance.new("UICorner")
+	local ItemTp = Instance.new("TextButton")
+	local UICorner_2 = Instance.new("UICorner")
+	local LocationTP = Instance.new("TextButton")
+	local UICorner_3 = Instance.new("UICorner")
+	local ESP = Instance.new("TextButton")
+	local UICorner_4 = Instance.new("UICorner")
+	local Misc = Instance.new("TextButton")
+	local UICorner_5 = Instance.new("UICorner")
+	local MercTP = Instance.new("TextButton")
+	local UICorner_6 = Instance.new("UICorner")
+	local ItemTpFrame = Instance.new("Frame")
+	local UICorner_7 = Instance.new("UICorner")
+	local ItemTpScroll = Instance.new("ScrollingFrame")
+	local UIGridLayout = Instance.new("UIGridLayout")
+	local Refresh = Instance.new("TextButton")
+	local UICorner_8 = Instance.new("UICorner")
+	local TpFrame = Instance.new("Frame")
+	local TpScroll = Instance.new("ScrollingFrame")
+	local Docks = Instance.new("TextButton")
+	local UICorner_9 = Instance.new("UICorner")
+	local Generators = Instance.new("TextButton")
+	local UICorner_10 = Instance.new("UICorner")
+	local Hangar = Instance.new("TextButton")
+	local UICorner_11 = Instance.new("UICorner")
+	local Lab = Instance.new("TextButton")
+	local UICorner_12 = Instance.new("UICorner")
+	local Observatory = Instance.new("TextButton")
+	local UICorner_13 = Instance.new("UICorner")
+	local RadioTower = Instance.new("TextButton")
+	local UICorner_14 = Instance.new("UICorner")
+	local Spawn = Instance.new("TextButton")
+	local UICorner_15 = Instance.new("UICorner")
+	local WatchTower = Instance.new("TextButton")
+	local UICorner_16 = Instance.new("UICorner")
+	local UIGridLayout_2 = Instance.new("UIGridLayout")
+	local UICorner_17 = Instance.new("UICorner")
+	local EspFrame = Instance.new("Frame")
+	local EspScroll = Instance.new("ScrollingFrame")
+	local MercESP = Instance.new("TextButton")
+	local UICorner_18 = Instance.new("UICorner")
+	local SnakeESP = Instance.new("TextButton")
+	local UICorner_19 = Instance.new("UICorner")
+	local UIGridLayout_3 = Instance.new("UIGridLayout")
+	local ItemESP = Instance.new("TextButton")
+	local UICorner_20 = Instance.new("UICorner")
+	local CollectiblesESP = Instance.new("TextButton")
+	local UICorner_21 = Instance.new("UICorner")
+	local PlayerESP = Instance.new("TextButton")
+	local UICorner_22 = Instance.new("UICorner")
+	local UICorner_23 = Instance.new("UICorner")
+	local Sample = Instance.new("TextButton")
+	local UICorner_24 = Instance.new("UICorner")
+	local MiscFrame = Instance.new("Frame")
+	local MiscScroll = Instance.new("ScrollingFrame")
+	local FullBright = Instance.new("TextButton")
+	local UICorner_25 = Instance.new("UICorner")
+	local UIGridLayout_4 = Instance.new("UIGridLayout")
+	local NoSlipping = Instance.new("TextButton")
+	local UICorner_26 = Instance.new("UICorner")
+	local IY = Instance.new("TextButton")
+	local UICorner_27 = Instance.new("UICorner")
+	local NoBlur = Instance.new("TextButton")
+	local UICorner_28 = Instance.new("UICorner")
+	local NightVision = Instance.new("TextButton")
+	local UICorner_29 = Instance.new("UICorner")
+	local EXPVision = Instance.new("TextButton")
+	local UICorner_30 = Instance.new("UICorner")
+	local ChatLog = Instance.new("TextButton")
+	local UICorner_31 = Instance.new("UICorner")
+	local UICorner_32 = Instance.new("UICorner")
+	local MercTpFrame = Instance.new("Frame")
+	local MercTpScroll = Instance.new("ScrollingFrame")
+	local UIGridLayout_5 = Instance.new("UIGridLayout")
+	local MercRefresh = Instance.new("TextButton")
+	local UICorner_33 = Instance.new("UICorner")
+	local UICorner_34 = Instance.new("UICorner")
+	
+	local FireCollectibleDetector = Instance.new("TextButton")
+	local UICorner_35 = Instance.new("UICorner")
+	local FireOrbitalDetector = Instance.new("TextButton")
+	local UICorner_36 = Instance.new("UICorner")
+	local RandomTP = Instance.new("TextButton")
+	local UICorner_37 = Instance.new("UICorner")
+	local RemoveUselessTrees = Instance.new("TextButton")
+	local UICorner_38 = Instance.new("UICorner")
+	local RemoveZoomCap = Instance.new("TextButton")
+	local UICorner_39 = Instance.new("UICorner")
+	local WipAntiCheatBypass = Instance.new("TextButton")
+	local UICorner_40 = Instance.new("UICorner")
+	
+	GUI.Name = "GUI"
+	GUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	GUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+	List.Name = "List"
+	List.Parent = GUI
+	List.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+	List.Position = UDim2.new(0.239920691, 0, 0.116618074, 0)
+	List.Size = UDim2.new(0, 134, 0, 561)
+
+	UICorner.CornerRadius = UDim.new(0.100000001, 0)
+	UICorner.Parent = List
+
+	ItemTp.Name = "ItemTp"
+	ItemTp.Parent = List
+	ItemTp.BackgroundColor3 = Color3.fromRGB(198, 198, 198)
+	ItemTp.BorderSizePixel = 0
+	ItemTp.Position = UDim2.new(0.12686567, 0, 0.0160427801, 0)
+	ItemTp.Size = UDim2.new(0.741791368, 0, 0.100000001, 0)
+	ItemTp.Font = Enum.Font.Code
+	ItemTp.Text = "ItemTP"
+	ItemTp.TextColor3 = Color3.fromRGB(0, 0, 0)
+	ItemTp.TextSize = 20.000
+
+	UICorner_2.CornerRadius = UDim.new(0.100000001, 0)
+	UICorner_2.Parent = ItemTp
+
+	LocationTP.Name = "LocationTP"
+	LocationTP.Parent = List
+	LocationTP.BackgroundColor3 = Color3.fromRGB(198, 198, 198)
+	LocationTP.BorderSizePixel = 0
+	LocationTP.Position = UDim2.new(0.12686567, 0, 0.130124778, 0)
+	LocationTP.Size = UDim2.new(0.741791368, 0, 0.100000001, 0)
+	LocationTP.Font = Enum.Font.Code
+	LocationTP.Text = "LocationTP"
+	LocationTP.TextColor3 = Color3.fromRGB(0, 0, 0)
+	LocationTP.TextSize = 20.000
+
+	UICorner_3.CornerRadius = UDim.new(0.100000001, 0)
+	UICorner_3.Parent = LocationTP
+
+	ESP.Name = "ESP"
+	ESP.Parent = List
+	ESP.BackgroundColor3 = Color3.fromRGB(198, 198, 198)
+	ESP.BorderSizePixel = 0
+	ESP.Position = UDim2.new(0.12686567, 0, 0.358288765, 0)
+	ESP.Size = UDim2.new(0.741791368, 0, 0.100000001, 0)
+	ESP.Font = Enum.Font.Code
+	ESP.Text = "ESP"
+	ESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+	ESP.TextSize = 20.000
+
+	UICorner_4.CornerRadius = UDim.new(0.100000001, 0)
+	UICorner_4.Parent = ESP
+
+	Misc.Name = "Misc"
+	Misc.Parent = List
+	Misc.BackgroundColor3 = Color3.fromRGB(198, 198, 198)
+	Misc.BorderSizePixel = 0
+	Misc.Position = UDim2.new(0.12686567, 0, 0.470588237, 0)
+	Misc.Size = UDim2.new(0.741791368, 0, 0.100000001, 0)
+	Misc.Font = Enum.Font.Code
+	Misc.Text = "Misc"
+	Misc.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Misc.TextSize = 20.000
+
+	UICorner_5.CornerRadius = UDim.new(0.100000001, 0)
+	UICorner_5.Parent = Misc
+
+	MercTP.Name = "MercTP"
+	MercTP.Parent = List
+	MercTP.BackgroundColor3 = Color3.fromRGB(198, 198, 198)
+	MercTP.BorderSizePixel = 0
+	MercTP.Position = UDim2.new(0.12686567, 0, 0.244206771, 0)
+	MercTP.Size = UDim2.new(0.741791368, 0, 0.100000001, 0)
+	MercTP.Font = Enum.Font.Code
+	MercTP.Text = "MercTP"
+	MercTP.TextColor3 = Color3.fromRGB(0, 0, 0)
+	MercTP.TextSize = 20.000
+
+	UICorner_6.CornerRadius = UDim.new(0.100000001, 0)
+	UICorner_6.Parent = MercTP
+
+	ItemTpFrame.Name = "ItemTpFrame"
+	ItemTpFrame.Parent = GUI
+	ItemTpFrame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+	ItemTpFrame.BorderSizePixel = 0
+	ItemTpFrame.Position = UDim2.new(0.335756779, 0, 0.116618074, 0)
+	ItemTpFrame.Size = UDim2.new(0, 489, 0, 561)
+	ItemTpFrame.Visible = false
+
+	UICorner_7.CornerRadius = UDim.new(0.0199999996, 0)
+	UICorner_7.Parent = ItemTpFrame
+
+	ItemTpScroll.Name = "ItemTpScroll"
+	ItemTpScroll.Parent = ItemTpFrame
+	ItemTpScroll.Active = true
+	ItemTpScroll.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+	ItemTpScroll.BorderColor3 = Color3.fromRGB(44, 44, 44)
+	ItemTpScroll.BorderSizePixel = 2
+	ItemTpScroll.Position = UDim2.new(0.0245398767, 0, 0.130124778, 0)
+	ItemTpScroll.Size = UDim2.new(0, 466, 0, 470)
+	ItemTpScroll.AutomaticCanvasSize = Enum.AutomaticSize.XY
+	
+	UIGridLayout.Parent = ItemTpScroll
+	UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+	UIGridLayout.CellPadding = UDim2.new(0.00999999978, 0, 0.00499999989, 0)
+	UIGridLayout.CellSize = UDim2.new(0.200000003, 0, 0.0399999991, 0)
+
+	Refresh.Name = "Refresh"
+	Refresh.Parent = ItemTpFrame
+	Refresh.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	Refresh.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	Refresh.BorderSizePixel = 0
+	Refresh.Position = UDim2.new(0.0235253703, 0, 0.0263153426, 0)
+	Refresh.Size = UDim2.new(0.246191263, 0, 0.0790322497, 0)
+	Refresh.Font = Enum.Font.Code
+	Refresh.Text = "Refresh"
+	Refresh.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Refresh.TextSize = 20.000
+	Refresh.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+	Refresh.TextWrapped = true
+
+	UICorner_8.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_8.Parent = Refresh
+
+	TpFrame.Name = "TpFrame"
+	TpFrame.Parent = GUI
+	TpFrame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+	TpFrame.BorderSizePixel = 0
+	TpFrame.Position = UDim2.new(0.335756779, 0, 0.116618074, 0)
+	TpFrame.Size = UDim2.new(0, 489, 0, 561)
+	TpFrame.Visible = false
+
+	TpScroll.Name = "TpScroll"
+	TpScroll.Parent = TpFrame
+	TpScroll.Active = true
+	TpScroll.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+	TpScroll.BorderColor3 = Color3.fromRGB(44, 44, 44)
+	TpScroll.BorderSizePixel = 2
+	TpScroll.Position = UDim2.new(0.0245398767, 0, 0.0263153464, 0)
+	TpScroll.Size = UDim2.new(0, 466, 0, 528)
+	TpScroll.CanvasSize = UDim2.new(0, 0, 0, 163)
+	TpScroll.AutomaticCanvasSize = Enum.AutomaticSize.XY
+	
+	Docks.Name = "Docks"
+	Docks.Parent = TpScroll
+	Docks.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	Docks.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	Docks.BorderSizePixel = 2
+	Docks.Size = UDim2.new(0, 200, 0, 50)
+	Docks.Font = Enum.Font.Code
+	Docks.Text = "Docks"
+	Docks.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Docks.TextSize = 20.000
+	Docks.TextWrapped = true
+
+	UICorner_9.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_9.Parent = Docks
+
+	Generators.Name = "Generators"
+	Generators.Parent = TpScroll
+	Generators.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	Generators.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	Generators.BorderSizePixel = 2
+	Generators.Size = UDim2.new(0, 200, 0, 50)
+	Generators.Font = Enum.Font.Code
+	Generators.Text = "Generators"
+	Generators.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Generators.TextSize = 20.000
+	Generators.TextWrapped = true
+
+	UICorner_10.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_10.Parent = Generators
+
+	Hangar.Name = "Hangar"
+	Hangar.Parent = TpScroll
+	Hangar.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	Hangar.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	Hangar.BorderSizePixel = 2
+	Hangar.Size = UDim2.new(0, 200, 0, 50)
+	Hangar.Font = Enum.Font.Code
+	Hangar.Text = "Hangar"
+	Hangar.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Hangar.TextSize = 20.000
+	Hangar.TextWrapped = true
+
+	UICorner_11.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_11.Parent = Hangar
+
+	Lab.Name = "Lab"
+	Lab.Parent = TpScroll
+	Lab.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	Lab.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	Lab.BorderSizePixel = 2
+	Lab.Size = UDim2.new(0, 200, 0, 50)
+	Lab.Font = Enum.Font.Code
+	Lab.Text = "Lab"
+	Lab.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Lab.TextSize = 20.000
+	Lab.TextWrapped = true
+
+	UICorner_12.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_12.Parent = Lab
+
+	Observatory.Name = "Observatory"
+	Observatory.Parent = TpScroll
+	Observatory.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	Observatory.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	Observatory.BorderSizePixel = 2
+	Observatory.Size = UDim2.new(0, 200, 0, 50)
+	Observatory.Font = Enum.Font.Code
+	Observatory.Text = "Observatory"
+	Observatory.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Observatory.TextSize = 20.000
+	Observatory.TextWrapped = true
+
+	UICorner_13.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_13.Parent = Observatory
+
+	RadioTower.Name = "RadioTower"
+	RadioTower.Parent = TpScroll
+	RadioTower.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	RadioTower.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	RadioTower.BorderSizePixel = 2
+	RadioTower.Size = UDim2.new(0, 200, 0, 50)
+	RadioTower.Font = Enum.Font.Code
+	RadioTower.Text = "RadioTower"
+	RadioTower.TextColor3 = Color3.fromRGB(0, 0, 0)
+	RadioTower.TextSize = 20.000
+	RadioTower.TextWrapped = true
+
+	UICorner_14.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_14.Parent = RadioTower
+
+	Spawn.Name = "Spawn"
+	Spawn.Parent = TpScroll
+	Spawn.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	Spawn.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	Spawn.BorderSizePixel = 2
+	Spawn.Size = UDim2.new(0, 200, 0, 50)
+	Spawn.Font = Enum.Font.Code
+	Spawn.Text = "Spawn"
+	Spawn.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Spawn.TextSize = 20.000
+	Spawn.TextWrapped = true
+
+	UICorner_15.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_15.Parent = Spawn
+
+	WatchTower.Name = "WatchTower"
+	WatchTower.Parent = TpScroll
+	WatchTower.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	WatchTower.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	WatchTower.BorderSizePixel = 2
+	WatchTower.Size = UDim2.new(0, 200, 0, 50)
+	WatchTower.Font = Enum.Font.Code
+	WatchTower.Text = "WatchTower"
+	WatchTower.TextColor3 = Color3.fromRGB(0, 0, 0)
+	WatchTower.TextSize = 20.000
+	WatchTower.TextWrapped = true
+
+	UICorner_16.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_16.Parent = WatchTower
+
+	UIGridLayout_2.Parent = TpScroll
+	UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+	UIGridLayout_2.CellPadding = UDim2.new(0.00999999978, 0, 0.00499999989, 0)
+	UIGridLayout_2.CellSize = UDim2.new(0.25, 0, 0.100000001, 0)
+
+	UICorner_17.CornerRadius = UDim.new(0.0199999996, 0)
+	UICorner_17.Parent = TpFrame
+
+	EspFrame.Name = "EspFrame"
+	EspFrame.Parent = GUI
+	EspFrame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+	EspFrame.BorderSizePixel = 0
+	EspFrame.Position = UDim2.new(0.335756779, 0, 0.116618074, 0)
+	EspFrame.Size = UDim2.new(0, 489, 0, 561)
+	EspFrame.Visible = false
+
+	EspScroll.Name = "EspScroll"
+	EspScroll.Parent = EspFrame
+	EspScroll.Active = true
+	EspScroll.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+	EspScroll.BorderColor3 = Color3.fromRGB(44, 44, 44)
+	EspScroll.BorderSizePixel = 2
+	EspScroll.Position = UDim2.new(0.0245398767, 0, 0.0263153464, 0)
+	EspScroll.Size = UDim2.new(0, 466, 0, 528)
+	EspScroll.CanvasSize = UDim2.new(0, 0, 0, 108)
+	EspScroll.AutomaticCanvasSize = Enum.AutomaticSize.XY
+	
+	MercESP.Name = "MercESP"
+	MercESP.Parent = EspScroll
+	MercESP.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	MercESP.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	MercESP.BorderSizePixel = 2
+	MercESP.Size = UDim2.new(0, 200, 0, 50)
+	MercESP.Font = Enum.Font.Code
+	MercESP.Text = "Merc ESP"
+	MercESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+	MercESP.TextSize = 20.000
+	MercESP.TextWrapped = true
+
+	UICorner_18.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_18.Parent = MercESP
+
+	SnakeESP.Name = "SnakeESP"
+	SnakeESP.Parent = EspScroll
+	SnakeESP.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	SnakeESP.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	SnakeESP.BorderSizePixel = 2
+	SnakeESP.Size = UDim2.new(0, 200, 0, 50)
+	SnakeESP.Font = Enum.Font.Code
+	SnakeESP.Text = "Snake ESP"
+	SnakeESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+	SnakeESP.TextSize = 20.000
+	SnakeESP.TextWrapped = true
+
+	UICorner_19.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_19.Parent = SnakeESP
+
+	UIGridLayout_3.Parent = EspScroll
+	UIGridLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+	UIGridLayout_3.CellPadding = UDim2.new(0.00999999978, 0, 0.00499999989, 0)
+	UIGridLayout_3.CellSize = UDim2.new(0.25, 0, 0.100000001, 0)
+
+	ItemESP.Name = "ItemESP"
+	ItemESP.Parent = EspScroll
+	ItemESP.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	ItemESP.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	ItemESP.BorderSizePixel = 2
+	ItemESP.Size = UDim2.new(0, 200, 0, 50)
+	ItemESP.Font = Enum.Font.Code
+	ItemESP.Text = "Item ESP"
+	ItemESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+	ItemESP.TextSize = 20.000
+	ItemESP.TextWrapped = true
+
+	UICorner_20.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_20.Parent = ItemESP
+
+	CollectiblesESP.Name = "CollectiblesESP"
+	CollectiblesESP.Parent = EspScroll
+	CollectiblesESP.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	CollectiblesESP.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	CollectiblesESP.BorderSizePixel = 2
+	CollectiblesESP.Size = UDim2.new(0, 200, 0, 50)
+	CollectiblesESP.Font = Enum.Font.Code
+	CollectiblesESP.Text = "CollectiblesESP"
+	CollectiblesESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+	CollectiblesESP.TextSize = 20.000
+	CollectiblesESP.TextWrapped = true
+
+	UICorner_21.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_21.Parent = CollectiblesESP
+
+	PlayerESP.Name = "PlayerESP"
+	PlayerESP.Parent = EspScroll
+	PlayerESP.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	PlayerESP.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	PlayerESP.BorderSizePixel = 2
+	PlayerESP.Size = UDim2.new(0, 200, 0, 50)
+	PlayerESP.Font = Enum.Font.Code
+	PlayerESP.Text = "PlayerESP"
+	PlayerESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+	PlayerESP.TextSize = 20.000
+	PlayerESP.TextWrapped = true
+
+	UICorner_22.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_22.Parent = PlayerESP
+
+	UICorner_23.CornerRadius = UDim.new(0.0199999996, 0)
+	UICorner_23.Parent = EspFrame
+
+	Sample.Name = "Sample"
+	Sample.Parent = GUI
+	Sample.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	Sample.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	Sample.BorderSizePixel = 2
+	Sample.Position = UDim2.new(0.0133003974, 0, 0.0138376411, 0)
+	Sample.Size = UDim2.new(0.301405996, 0, 0.120756462, 0)
+	Sample.Visible = false
+	Sample.Font = Enum.Font.Code
+	Sample.Text = "Refresh"
+	Sample.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Sample.TextScaled = true
+	Sample.TextSize = 14.000
+	Sample.TextWrapped = true
+
+	local PositionValue = Instance.new("Vector3Value")
+	PositionValue.Parent = Sample
+	PositionValue.Name = "PositionTool"
+
+	UICorner_24.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_24.Parent = Sample
+
+	MiscFrame.Name = "MiscFrame"
+	MiscFrame.Parent = GUI
+	MiscFrame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+	MiscFrame.BorderSizePixel = 0
+	MiscFrame.Position = UDim2.new(0.335756779, 0, 0.116618074, 0)
+	MiscFrame.Size = UDim2.new(0, 489, 0, 561)
+
+	MiscScroll.Name = "MiscScroll"
+	MiscScroll.Parent = MiscFrame
+	MiscScroll.Active = true
+	MiscScroll.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+	MiscScroll.BorderColor3 = Color3.fromRGB(44, 44, 44)
+	MiscScroll.BorderSizePixel = 2
+	MiscScroll.Position = UDim2.new(0.0245398767, 0, 0.0263153464, 0)
+	MiscScroll.Size = UDim2.new(0, 466, 0, 528)
+	MiscScroll.CanvasSize = UDim2.new(0, 0, 0, 108)
+	MiscScroll.AutomaticCanvasSize = Enum.AutomaticSize.XY
+	
+	FullBright.Name = "FullBright"
+	FullBright.Parent = MiscScroll
+	FullBright.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	FullBright.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	FullBright.BorderSizePixel = 2
+	FullBright.Size = UDim2.new(0, 200, 0, 50)
+	FullBright.Font = Enum.Font.Code
+	FullBright.Text = "FullBright"
+	FullBright.TextColor3 = Color3.fromRGB(0, 0, 0)
+	FullBright.TextSize = 20.000
+	FullBright.TextWrapped = true
+
+	UICorner_25.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_25.Parent = FullBright
+
+	UIGridLayout_4.Parent = MiscScroll
+	UIGridLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+	UIGridLayout_4.CellPadding = UDim2.new(0.00999999978, 0, 0.00499999989, 0)
+	UIGridLayout_4.CellSize = UDim2.new(0.25, 0, 0.100000001, 0)
+
+	NoSlipping.Name = "NoSlipping"
+	NoSlipping.Parent = MiscScroll
+	NoSlipping.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	NoSlipping.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	NoSlipping.BorderSizePixel = 2
+	NoSlipping.Size = UDim2.new(0, 200, 0, 50)
+	NoSlipping.Font = Enum.Font.Code
+	NoSlipping.Text = "NoSlipping"
+	NoSlipping.TextColor3 = Color3.fromRGB(0, 0, 0)
+	NoSlipping.TextSize = 20.000
+	NoSlipping.TextWrapped = true
+
+	UICorner_26.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_26.Parent = NoSlipping
+
+	IY.Name = "IY"
+	IY.Parent = MiscScroll
+	IY.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	IY.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	IY.BorderSizePixel = 2
+	IY.Size = UDim2.new(0, 200, 0, 50)
+	IY.Font = Enum.Font.Code
+	IY.Text = "IY"
+	IY.TextColor3 = Color3.fromRGB(0, 0, 0)
+	IY.TextSize = 20.000
+	IY.TextWrapped = true
+
+	UICorner_27.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_27.Parent = IY
+
+	NoBlur.Name = "NoBlur"
+	NoBlur.Parent = MiscScroll
+	NoBlur.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	NoBlur.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	NoBlur.BorderSizePixel = 2
+	NoBlur.Size = UDim2.new(0, 200, 0, 50)
+	NoBlur.Font = Enum.Font.Code
+	NoBlur.Text = "NoBlur"
+	NoBlur.TextColor3 = Color3.fromRGB(0, 0, 0)
+	NoBlur.TextSize = 20.000
+	NoBlur.TextWrapped = true
+
+	UICorner_28.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_28.Parent = NoBlur
+
+	NightVision.Name = "NightVision"
+	NightVision.Parent = MiscScroll
+	NightVision.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	NightVision.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	NightVision.BorderSizePixel = 2
+	NightVision.Size = UDim2.new(0, 200, 0, 50)
+	NightVision.Font = Enum.Font.Code
+	NightVision.Text = "NightVision"
+	NightVision.TextColor3 = Color3.fromRGB(0, 0, 0)
+	NightVision.TextSize = 20.000
+	NightVision.TextWrapped = true
+
+	UICorner_29.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_29.Parent = NightVision
+
+	EXPVision.Name = "EXPVision"
+	EXPVision.Parent = MiscScroll
+	EXPVision.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	EXPVision.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	EXPVision.BorderSizePixel = 2
+	EXPVision.Size = UDim2.new(0, 200, 0, 50)
+	EXPVision.Font = Enum.Font.Code
+	EXPVision.Text = "EXPVision"
+	EXPVision.TextColor3 = Color3.fromRGB(0, 0, 0)
+	EXPVision.TextSize = 20.000
+	EXPVision.TextWrapped = true
+
+	UICorner_30.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_30.Parent = EXPVision
+
+	ChatLog.Name = "ChatLog"
+	ChatLog.Parent = MiscScroll
+	ChatLog.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	ChatLog.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	ChatLog.BorderSizePixel = 2
+	ChatLog.Size = UDim2.new(0, 200, 0, 50)
+	ChatLog.Font = Enum.Font.Code
+	ChatLog.Text = "ChatLog (Press F9)"
+	ChatLog.TextColor3 = Color3.fromRGB(0, 0, 0)
+	ChatLog.TextSize = 20.000
+	ChatLog.TextWrapped = true
+	
+	FireCollectibleDetector.Name = "FireCollectibleDetector"
+	FireCollectibleDetector.Parent = MiscScroll
+	FireCollectibleDetector.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	FireCollectibleDetector.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	FireCollectibleDetector.BorderSizePixel = 2
+	FireCollectibleDetector.Size = UDim2.new(0, 200, 0, 50)
+	FireCollectibleDetector.Font = Enum.Font.Code
+	FireCollectibleDetector.Text = "FireCollectibles"
+	FireCollectibleDetector.TextColor3 = Color3.fromRGB(0, 0, 0)
+	FireCollectibleDetector.TextSize = 20.000
+	FireCollectibleDetector.TextWrapped = true
+	
+	UICorner_35.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_35.Parent = FireCollectibleDetector 
+	
+	FireOrbitalDetector.Name = "FireOrbitalDetector"
+	FireOrbitalDetector.Parent = MiscScroll
+	FireOrbitalDetector.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	FireOrbitalDetector.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	FireOrbitalDetector.BorderSizePixel = 2
+	FireOrbitalDetector.Size = UDim2.new(0, 200, 0, 50)
+	FireOrbitalDetector.Font = Enum.Font.Code
+	FireOrbitalDetector.Text = "FireOrbitalButtons"
+	FireOrbitalDetector.TextColor3 = Color3.fromRGB(0, 0, 0)
+	FireOrbitalDetector.TextSize = 20.000
+	FireOrbitalDetector.TextWrapped = true
+	
+	UICorner_36.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_36.Parent = FireOrbitalDetector
+	
+	RandomTP.Name = "RandomTP"
+	RandomTP.Parent = MiscScroll
+	RandomTP.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	RandomTP.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	RandomTP.BorderSizePixel = 2
+	RandomTP.Size = UDim2.new(0, 200, 0, 50)
+	RandomTP.Font = Enum.Font.Code
+	RandomTP.Text = "RandomTP"
+	RandomTP.TextColor3 = Color3.fromRGB(0, 0, 0)
+	RandomTP.TextSize = 20.000
+	RandomTP.TextWrapped = true
+	
+	UICorner_37.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_37.Parent = RandomTP
+	
+	RemoveUselessTrees.Name = "RemoveUselessTrees"
+	RemoveUselessTrees.Parent = MiscScroll
+	RemoveUselessTrees.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	RemoveUselessTrees.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	RemoveUselessTrees.BorderSizePixel = 2
+	RemoveUselessTrees.Size = UDim2.new(0, 200, 0, 50)
+	RemoveUselessTrees.Font = Enum.Font.Code
+	RemoveUselessTrees.Text = "ToggleNoCollideTrees"
+	RemoveUselessTrees.TextColor3 = Color3.fromRGB(0, 0, 0)
+	RemoveUselessTrees.TextSize = 20.000
+	RemoveUselessTrees.TextWrapped = true
+	
+	UICorner_38.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_38.Parent = RemoveUselessTrees
+	
+	RemoveZoomCap.Name = "RemoveZoomCap"
+	RemoveZoomCap.Parent = MiscScroll
+	RemoveZoomCap.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	RemoveZoomCap.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	RemoveZoomCap.BorderSizePixel = 2
+	RemoveZoomCap.Size = UDim2.new(0, 200, 0, 50)
+	RemoveZoomCap.Font = Enum.Font.Code
+	RemoveZoomCap.Text = "RemoveZoomCap"
+	RemoveZoomCap.TextColor3 = Color3.fromRGB(0, 0, 0)
+	RemoveZoomCap.TextSize = 20.000
+	RemoveZoomCap.TextWrapped = true
+	
+	UICorner_39.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_39.Parent = RemoveZoomCap
+	
+	WipAntiCheatBypass.Name = "WipAntiCheatBypass"
+	WipAntiCheatBypass.Parent = MiscScroll
+	WipAntiCheatBypass.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	WipAntiCheatBypass.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	WipAntiCheatBypass.BorderSizePixel = 2
+	WipAntiCheatBypass.Size = UDim2.new(0, 200, 0, 50)
+	WipAntiCheatBypass.Font = Enum.Font.Code
+	WipAntiCheatBypass.Text = "LocalBypassWIP"
+	WipAntiCheatBypass.TextColor3 = Color3.fromRGB(0, 0, 0)
+	WipAntiCheatBypass.TextSize = 20.000
+	WipAntiCheatBypass.TextWrapped = true
+	
+	UICorner_40.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_40.Parent = WipAntiCheatBypass
+	
+	UICorner_31.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_31.Parent = ChatLog
+
+	UICorner_32.CornerRadius = UDim.new(0.0199999996, 0)
+	UICorner_32.Parent = MiscFrame
+
+	MercTpFrame.Name = "MercTpFrame"
+	MercTpFrame.Parent = GUI
+	MercTpFrame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+	MercTpFrame.BorderSizePixel = 0
+	MercTpFrame.Position = UDim2.new(0.335756779, 0, 0.116618074, 0)
+	MercTpFrame.Size = UDim2.new(0, 489, 0, 561)
+	MercTpFrame.Visible = false
+
+	MercTpScroll.Name = "MercTpScroll"
+	MercTpScroll.Parent = MercTpFrame
+	MercTpScroll.Active = true
+	MercTpScroll.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+	MercTpScroll.BorderColor3 = Color3.fromRGB(44, 44, 44)
+	MercTpScroll.BorderSizePixel = 2
+	MercTpScroll.Position = UDim2.new(0.0245398767, 0, 0.130124778, 0)
+	MercTpScroll.Size = UDim2.new(0, 466, 0, 470)
+
+	UIGridLayout_5.Parent = MercTpScroll
+	UIGridLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+	UIGridLayout_5.CellPadding = UDim2.new(0.00999999978, 0, 0.00499999989, 0)
+	UIGridLayout_5.CellSize = UDim2.new(0.25, 0, 0.100000001, 0)
+
+	MercRefresh.Name = "MercRefresh"
+	MercRefresh.Parent = MercTpFrame
+	MercRefresh.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+	MercRefresh.BorderColor3 = Color3.fromRGB(38, 38, 38)
+	MercRefresh.BorderSizePixel = 0
+	MercRefresh.Position = UDim2.new(0.0235253703, 0, 0.0263153426, 0)
+	MercRefresh.Size = UDim2.new(0.246191263, 0, 0.0790322497, 0)
+	MercRefresh.Font = Enum.Font.Code
+	MercRefresh.Text = "Refresh"
+	MercRefresh.TextColor3 = Color3.fromRGB(0, 0, 0)
+	MercRefresh.TextSize = 20.000
+	MercRefresh.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+	MercRefresh.TextWrapped = true
+
+	UICorner_33.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_33.Parent = MercRefresh
+
+	UICorner_34.CornerRadius = UDim.new(0.0199999996, 0)
+	UICorner_34.Parent = MercTpFrame
+
+	UIGridLayout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+		UIGridLayout.Parent.CanvasSize = UDim2.fromOffset(0, UIGridLayout.AbsoluteContentSize.Y);
+	end)
+
+	UIGridLayout_2:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+		UIGridLayout_2.Parent.CanvasSize = UDim2.fromOffset(0, UIGridLayout_2.AbsoluteContentSize.Y);
+	end)
+
+	UIGridLayout_3:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+		UIGridLayout_3.Parent.CanvasSize = UDim2.fromOffset(0, UIGridLayout_3.AbsoluteContentSize.Y);
+	end)
+
+	UIGridLayout_4:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+		UIGridLayout_4.Parent.CanvasSize = UDim2.fromOffset(0, UIGridLayout_4.AbsoluteContentSize.Y);
+	end)
+
+	UIGridLayout_5:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+		UIGridLayout_5.Parent.CanvasSize = UDim2.fromOffset(0, UIGridLayout_4.AbsoluteContentSize.Y);
+	end)
+
+	local Utilities = {
+		"Watch",
+		"Flashlight",
+		"Lantern",
+		"Flare Gun",
+		"Treasure Map",
+		"Climbing Tool",
+		"Medical Kit",
+		"Walky Talky",
+		"GPS",
+		"Assistant Drone",
+		"Diving Gear",
+		"Master Bypass Console"
+	}
+
+	local Goggles = {
+		"Heat Vision Goggles",
+		"Night Vision Goggles",
+		"Experimental Vision Goggles"
+	}
+
+	local Rare = {
+		"Revolver",
+		"Double Barrel Shotgun",
+		"Scoped Rifle"
+	}
+
+	local Military = {
+		"Combat Shotgun",
+		"Tactical Shotgun",
+		"Assault Shotgun",
+		"Tactical Pistol",
+		"Submachine Gun",
+		"Battle Rifle",
+		"Light Machine Gun",
+		"Sniper Rifle",
+		"Proximity Explosive",
+		"Grenade",
+		"Ballistic Vest"
+	}
+
+	local Advanced = {
+		"Gatling Gun",
+		"Flamethrower",
+		"Grenade Launcher"
+	}
+
+	local Energy = {
+		"Energy Lancer",
+		"Proton Cannon",
+		"Healing Spray",
+		"Strange Drink",
+		"Ammunition Crate"
+	}
+
+	local Artifacts = {
+		"Artifact A",
+		"Artifact B",
+		"Artifact C",
+		"Artifact D",
+		"Orbital Strike"
+	}
+
+	local MiscTools = {
+		"Keycard (Level 1)",
+		"Keycard (Level 2)",
+		"Keycard (Level 3)",
+		"Keycard (Level 4)",
+		"Brick"
+	}
+	
+	local LastWindowOpen = ItemTpFrame
+	local NoSlip = false
+	local FullBrightToggle = false
+	local NoBlurToggle = false
+	local MercEspToggle  = false
+	local ItemEspToggle = false
+	local ChatLogToggle = false
+	local Trees = false
+	local Zoom = false
+	
+	local function UpdateTools()
+		for _, Child in pairs(ItemTpScroll:GetChildren()) do
+			if Child:IsA("TextButton") then
+				Child:Destroy()
+			end
+		end
+
+		for _, Tool in pairs(workspace.Tools:GetChildren()) do
+			local NewButton = Sample:Clone()
+			NewButton.Parent = ItemTpScroll
+			NewButton.Name = Tool.Name
+			NewButton.Text = string.split(Tool.Name, "#")[1]
+			NewButton.PositionTool.Value = Tool.Handle.Position
+			if table.find(Utilities, string.split(Tool.Name, "#")[1]) then
+				NewButton.BackgroundColor3 = Color3.fromRGB(149,149,149)
+			elseif table.find(Rare, string.split(Tool.Name, "#")[1]) then
+				NewButton.BackgroundColor3 = Color3.fromRGB(149, 0, 0)
+			elseif table.find(Military, string.split(Tool.Name, "#")[1]) then
+				NewButton.BackgroundColor3 = Color3.fromRGB(0, 149, 0)
+			elseif table.find(Advanced, string.split(Tool.Name, "#")[1]) then
+				NewButton.BackgroundColor3 = Color3.fromRGB(149, 0, 149)
+			elseif table.find(Energy, string.split(Tool.Name, "#")[1]) then
+				NewButton.BackgroundColor3 = Color3.fromRGB(0, 149, 149)
+			elseif table.find(Artifacts, string.split(Tool.Name, "#")[1]) then
+				NewButton.BackgroundColor3 = Color3.fromRGB(149, 149, 0)
+			elseif table.find(Goggles, string.split(Tool.Name, "#")[1]) then
+				NewButton.BackgroundColor3 = Color3.fromRGB(149, 66, 24)
+			elseif table.find(MiscTools, string.split(Tool.Name, "#")[1]) then
+				NewButton.BackgroundColor3 = Color3.fromRGB(149, 0, 149)
+			end
+			NewButton.Visible = true
+			NewButton.MouseButton1Click:Connect(function()
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(NewButton.PositionTool.Value, Vector3.new(0,0,0))
+			end)
+		end
+	end
+
+	local function UpdateMercs()
+		for _, Child in pairs(MercTpScroll:GetChildren()) do
+			if Child:IsA("TextButton") then
+				Child:Destroy()
+			end
+		end
+
+		for _, Child in pairs(workspace.AIHunter:GetChildren()) do
+			if Child:IsA("Model") and Child.Name ~= "Helicopter" then
+				local MercButton = Sample:Clone()
+				MercButton.Parent = MercTpScroll
+				MercButton.Name = Child.Name
+				MercButton.Text = Child.Name
+				MercButton.PositionTool.Value = Child.HumanoidRootPart.Position
+				MercButton.Visible = true
+				MercButton.MouseButton1Click:Connect(function()
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(MercButton.PositionTool.Value, Vector3.new(0,0,0))
+				end)
+			end
+		end
+	end
+
+	local function UpdateMercEsp()
+		if MercEspToggle then
+			for _, Child in pairs(workspace.AIHunter:GetChildren()) do
+				if Child:IsA("Model") and Child.Name ~= "Helicopter" then
+					for _, MercChild in pairs(Child:GetChildren()) do
+						if MercChild:IsA("MeshPart") or MercChild:IsA("BasePart") or MercChild:IsA("Part") then
+							if not MercChild:FindFirstChild("ESP") then
+								if MercChild.Name ~= "Head" and MercChild.Name ~= "HumanoidRootPart" then
+									for _, enum in pairs(Enum.NormalId:GetEnumItems()) do
+										local ESP = Instance.new("SurfaceGui")
+										local Frame = Instance.new("Frame")
+
+										ESP.Name = "ESP"
+										ESP.Parent = MercChild
+										ESP.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+										ESP.AlwaysOnTop = true
+										ESP.Face = enum
+
+										Frame.Parent = ESP
+										Frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+										Frame.BorderSizePixel = 0
+										Frame.Size = UDim2.new(1, 0, 1, 0)
+										Frame.BackgroundTransparency = 0.3
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		else
+			for _, Child in pairs(workspace.AIHunter:GetChildren()) do
+				if Child:IsA("Model") and Child.Name ~= "Helicopter" then
+					for _, MercChild in pairs(Child:GetChildren()) do
+						if MercChild:IsA("MeshPart") or MercChild:IsA("BasePart") or MercChild:IsA("Part") then
+							if MercChild.Name ~= "Head" and MercChild.Name ~= "HumanoidRootPart" then
+								for _, AnotherChild in pairs(MercChild:GetChildren()) do
+									if AnotherChild.Name == "ESP" then
+										AnotherChild:Destroy()
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+
+	local function UpdateSnakeEsp()
+		if workspace.Threats.Serpent then
+			if not workspace.Threats.Serpent.Head.Main:FindFirstChild("ESP") then
+				for _, enum in pairs(Enum.NormalId:GetEnumItems()) do
+					local ESP = Instance.new("SurfaceGui") 
+					local Frame = Instance.new("Frame")
+
+					ESP.Name = "ESP"
+					ESP.Parent = workspace.Threats.Serpent.Head.Main
+					ESP.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+					ESP.AlwaysOnTop = true
+					ESP.Face = enum
+
+					Frame.Parent = ESP
+					Frame.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+					Frame.BorderSizePixel = 0
+					Frame.Size = UDim2.new(1, 0, 1, 0)
+					Frame.BackgroundTransparency = 0.3
+				end
+			else
+				for _, Child in pairs(workspace.Threats.Serpent.Head.Main:GetChildren()) do
+					if Child.Name == "ESP" then
+						Child:Destroy()
+					end
+				end
+			end
+		end
+	end
+
+	local function UpdateItemEsp()
+		if ItemEspToggle then
+			for _, Tool in pairs(workspace.Tools:GetChildren()) do
+				if Tool:FindFirstChild("Handle") then
+					if not Tool.Handle:FindFirstChild("ESP") then
+						for _, enum in pairs(Enum.NormalId:GetEnumItems()) do
+							local ESP = Instance.new("SurfaceGui") 
+							local Frame = Instance.new("Frame")
+
+							ESP.Name = "ESP"
+							ESP.Parent = Tool.Handle
+							ESP.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+							ESP.AlwaysOnTop = true
+							ESP.Face = enum
+
+							Frame.Parent = ESP
+							Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+							Frame.BorderSizePixel = 0
+							Frame.Size = UDim2.new(1, 0, 1, 0)
+							Frame.BackgroundTransparency = 0.3
+						end
+					end
+				end
+			end
+		else
+			for _, Tool in pairs(workspace.Tools:GetChildren()) do
+				if Tool:FindFirstChild("Handle") then
+					for _, Child in pairs(Tool.Handle:GetChildren()) do
+						if Child.Name == "ESP" then
+							Child:Destroy()
+						end
+					end
+				end
+			end
+		end
+	end
+
+	local function UpdateCollectibleEsp()
+		for _, Descendant in pairs(workspace.Collectibles:GetDescendants()) do
+			if Descendant:FindFirstChild("ClickDetector") then
+				if not Descendant:FindFirstChild("ESP") then
+					for _, enum in pairs(Enum.NormalId:GetEnumItems()) do
+						local ESP = Instance.new("SurfaceGui") 
+						local Frame = Instance.new("Frame")
+
+						ESP.Name = "ESP"
+						ESP.Parent = Descendant
+						ESP.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+						ESP.AlwaysOnTop = true
+						ESP.Face = enum
+
+						Frame.Parent = ESP
+						Frame.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
+						Frame.BorderSizePixel = 0
+						Frame.Size = UDim2.new(1, 0, 1, 0)
+						Frame.BackgroundTransparency = 0.3
+					end
+				else
+					for _,Child in pairs(Descendant:GetChildren()) do
+						if Child.Name == "ESP" then
+							Child:Destroy()
+						end
+					end
+				end
+			end
+		end
+	end
+
+	local function UpdatePlayerEsp()
+		for _, Player in pairs(game.Players:GetChildren()) do
+			if Player.Character and Player ~= game.Players.LocalPlayer then
+				for _, Child in pairs(Player.Character:GetChildren()) do
+					if not Child:FindFirstChild("ESP") then
+						if Child.Name ~= "Head" and Child.Name ~= "HumanoidRootPart" then
+							for _, enum in pairs(Enum.NormalId:GetEnumItems()) do
+								local ESP = Instance.new("SurfaceGui")
+								local Frame = Instance.new("Frame")
+
+								ESP.Name = "ESP"
+								ESP.Parent = Child
+								ESP.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+								ESP.AlwaysOnTop = true
+								ESP.Face = Enum.NormalId.Back
+
+								Frame.Parent = ESP
+								Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+								Frame.BorderSizePixel = 0
+								Frame.Size = UDim2.new(1, 0, 1, 0)
+								Frame.BackgroundTransparency = 0.3
+							end
+						end
+					else
+						for _, PartChild in pairs(Child:GetChildren()) do
+							if PartChild.Name == "ESP" then
+								PartChild:Destroy()
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+	
+	WipAntiCheatBypass.MouseButton1Click:Connect(function()
+		if game.Players.LocalPlayer.PlayerScripts:FindFirstChild("Part") then
+			game.Players.LocalPlayer.PlayerScripts.Part:Destroy()
+		end
+	end)
+	
+	FireOrbitalDetector.MouseButton1Click:Connect(function()
+		warn("i dont have synapse to figure out how the button works B)")
+	end)
+	
+	FireCollectibleDetector.MouseButton1Click:Connect(function()
+		for _, Descendant in pairs(workspace.Collectibles:GetDescendants()) do
+			if Descendant:FindFirstChild("ClickDetector") then
+				fireclickdetector(Descendant.ClickDetector)
+			end
+		end
+	end)
+	
+	RemoveUselessTrees.MouseButton1Click:Connect(function()
+		if not Trees then
+			Trees = true
+			for _, Child in pairs(workspace.NoCollideTrees:GetDescendants()) do
+				if Child:IsA("MeshPart") then
+					Child.Transparency = 1
+				end
+			end
+		else
+			Trees = false
+			for _, Child in pairs(workspace.NoCollideTrees:GetDescendants()) do
+				if Child:IsA("MeshPart") then
+					Child.Transparency = 0
+				end
+			end
+		end
+	end)
+	
+	RemoveZoomCap.MouseButton1Click:Connect(function()
+		if not Zoom then
+			Zoom = true
+			while Zoom do
+				game.Players.LocalPlayer.CameraMaxZoomDistance = 500
+				game:GetService("RunService").Stepped:Wait()
+			end
+		else
+			Zoom = false
+		end
+	end)
+	
+	RandomTP.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(workspace.SpecialRegions.Anomaly2.Position)
+	end)
+	
+	NightVision.MouseButton1Click:Connect(function()
+		if game.Lighting:FindFirstChild("V") then
+			game.Lighting.V:Destroy()
+		else
+			game.Players.LocalPlayer.PlayerScripts.Goggles.V:Clone().Parent = game.Lighting
+			game.Lighting.V.TintColor = Color3.fromRGB(14, 106, 0)
+		end
+	end)
+	
+	EXPVision.MouseButton1Click:Connect(function()
+		if game.Lighting:FindFirstChild("V2") then
+			game.Lighting.V2:Destroy()
+		else
+			game.Players.LocalPlayer.PlayerScripts.Goggles.V2:Clone().Parent = game.Lighting
+		end
+	end)
+	
+	local UserInputService = game:GetService("UserInputService")
+
+	UserInputService.InputBegan:Connect(function(Key, Event)
+		if not Event and Key.KeyCode == Enum.KeyCode.Z then
+			if List.Visible then
+				for _, Child in pairs(GUI:GetChildren()) do
+					if Child:IsA("Frame") then
+						if Child.Visible and Child ~= List then
+							LastWindowOpen = Child
+						end
+						Child.Visible = false
+					end
+				end
+			else
+				List.Visible = true
+				LastWindowOpen.Visible = true
+			end
+		end
+	end)
+
+	ItemTp.MouseButton1Click:Connect(function()
+		if not ItemTpFrame.Visible then
+			ItemTpFrame.Visible = true
+			for _, Child in pairs(GUI:GetChildren()) do
+				if Child:IsA("Frame") and Child ~= List and Child ~= ItemTpFrame then
+					Child.Visible = false
+				end
+			end
+		end
+	end)
+
+	LocationTP.MouseButton1Click:Connect(function()
+		if not TpFrame.Visible then
+			TpFrame.Visible = true
+			for _, Child in pairs(GUI:GetChildren()) do
+				if Child:IsA("Frame") and Child ~= List and Child ~= TpFrame then
+					Child.Visible = false
+				end
+			end
+		end
+	end)
+
+	MercTP.MouseButton1Click:Connect(function()
+		if not MercTpFrame.Visible then
+			MercTpFrame.Visible = true
+			for _, Child in pairs(GUI:GetChildren()) do
+				if Child:IsA("Frame") and Child ~= List and Child ~= MercTpFrame then
+					Child.Visible = false
+				end
+			end
+		end
+	end)
+
+	ESP.MouseButton1Click:Connect(function()
+		if not EspFrame.Visible then
+			EspFrame.Visible = true
+			for _, Child in pairs(GUI:GetChildren()) do
+				if Child:IsA("Frame") and Child ~= List and Child ~= EspFrame then
+					Child.Visible = false
+				end
+			end
+		end
+	end)
+
+	Misc.MouseButton1Click:Connect(function()
+		if not MiscFrame.Visible then
+			MiscFrame.Visible = true
+			for _, Child in pairs(GUI:GetChildren()) do
+				if Child:IsA("Frame") and Child ~= List and Child ~= MiscFrame then
+					Child.Visible = false
+				end
+			end
+		end
+	end)
+
+	FullBright.MouseButton1Click:Connect(function()
+		if FullBrightToggle then
+			FullBrightToggle = false
+			game.Lighting.Ambient = Color3.fromRGB(60,60,60)
+		else
+			FullBrightToggle = true
+			while FullBrightToggle do
+				game.Lighting.Ambient = Color3.fromRGB(255,255,255)
+				game:GetService("RunService").Heartbeat:Wait()
+			end
+		end
+	end)
+
+	NoBlur.MouseButton1Click:Connect(function()
+		if NoBlurToggle then
+			NoBlurToggle = false
+			local Blur = Instance.new("BlurEffect")
+			Blur.Name = "Blur"
+			Blur.Enabled = true
+			Blur.Parent = game.Lighting
+		else
+			NoBlurToggle = true
+			game.Lighting.Blur:Destroy()
+		end
+	end)
+
+	NoSlipping.MouseButton1Click:Connect(function()
+		if NoSlipping then
+			NoSlipping = false
+			game.Players.LocalPlayer.Character.Humanoid.MaxSlopeAngle = 50
+		else
+			NoSlipping = true
+			while NoSlipping do
+				game.Players.LocalPlayer.Character.Humanoid.MaxSlopeAngle = 89
+				game:GetService("RunService").Stepped:Wait()
+			end
+		end
+	end)
+	
+	ChatLog.MouseButton1Click:Connect(function()
+		if ChatLogToggle then
+			ChatLogToggle = false
+		else
+			ChatLogToggle = true
+			
+			for _, Player in pairs(game.Players:GetChildren()) do
+				local Event
+				Event = Player.Chatted:Connect(function(Message)
+					if not ChatLogToggle then
+						Event:Disconnect()
+					else
+						print(Player.Name .. ": " .. Message)
+					end
+				end)
+			end
+		end
+	end)
+	
+	IY.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+
+	MercESP.MouseButton1Click:Connect(function()
+		if MercEspToggle then
+			MercEspToggle = false
+			UpdateMercEsp()
+		else
+			MercEspToggle = true
+			UpdateMercEsp()
+		end
+	end)
+
+	ItemESP.MouseButton1Click:Connect(function()
+		if ItemEspToggle then
+			ItemEspToggle = false
+			UpdateItemEsp()
+		else
+			ItemEspToggle = true
+			UpdateItemEsp()
+		end
+	end)
+
+	PlayerESP.MouseButton1Click:Connect(function()
+		UpdatePlayerEsp()
+	end)
+
+	SnakeESP.MouseButton1Click:Connect(UpdateSnakeEsp)
+	PlayerESP.MouseButton1Click:Connect(UpdatePlayerEsp)
+	CollectiblesESP.MouseButton1Click:Connect(UpdateCollectibleEsp)
+
+	workspace.Tools.ChildAdded:Connect(UpdateTools)
+	workspace.Tools.ChildRemoved:Connect(UpdateTools)
+	Refresh.MouseButton1Click:Connect(UpdateTools)
+
+	workspace.AIHunter.ChildAdded:Connect(UpdateMercs)
+	workspace.AIHunter.ChildRemoved:Connect(UpdateMercs)
+	MercRefresh.MouseButton1Click:Connect(UpdateMercs)
+
+	Spawn.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(workspace.GameIntro.Seat.Position, Vector3.new(0,0,0))
+	end)
+
+	WatchTower.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-664.853, 160.922, -295.901), Vector3.new(0,0,0))
+	end)
+
+	Observatory.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(404.48, 131.988, -1212.95), Vector3.new(0,0,0))
+	end)
+
+	Generators.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(511.933, 0.5, -514.05), Vector3.new(0,0,0))
+	end)
+
+	Hangar.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-1531.259, 30.719, -2427.047), Vector3.new(0,0,0))
+	end)
+
+	RadioTower.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-1054.43, 500.684, -1388.51), Vector3.new(0,0,0))
+	end)
+
+	Lab.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-1779.41, -191.479, -1420.02), Vector3.new(0,0,0))
+	end)
+
+	Docks.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-2034.02, 5.446, -1569.29), Vector3.new(0,0,0))
+	end)
+elseif game.PlaceId == 3095204897 then
+	if game.Players.LocalPlayer.PlayerGui:FindFirstChild("gui") then
+		game.Players.LocalPlayer.PlayerGui.gui:Destroy()
+	end
+
+	local test = Instance.new("ScreenGui")
+	local Main = Instance.new("Frame")
+	local Scroll = Instance.new("ScrollingFrame")
+	local Grid = Instance.new("UIGridLayout")
+	local Refresh = Instance.new("TextButton")
+	local Sample = Instance.new("TextButton")
+	local Toggle = Instance.new("TextButton")
+
+	test.Name = "gui"
+	test.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	test.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+	Main.Name = "Main"
+	Main.Parent = test
+	Main.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+	Main.BorderSizePixel = 0
+	Main.Position = UDim2.new(0.249070987, 0, 0.142140836, 0)
+	Main.Size = UDim2.new(0, 767, 0, 581)
+
+	Scroll.Name = "Scroll"
+	Scroll.Parent = Main
+	Scroll.Active = true
+	Scroll.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+	Scroll.BorderSizePixel = 0
+	Scroll.Position = UDim2.new(0, 0, 0.0844192132, 0)
+	Scroll.Size = UDim2.new(0, 767, 0, 531)
+	Scroll.AutomaticCanvasSize = Enum.AutomaticSize.XY
+
+	Grid.Name = "Grid"
+	Grid.Parent = Scroll
+	Grid.SortOrder = Enum.SortOrder.LayoutOrder
+	Grid.CellPadding = UDim2.new(0.00499999989, 0, 0.00499999989, 0)
+	Grid.CellSize = UDim2.new(0.300000012, 0, 0.100000001, 0)
+
+	Refresh.Name = "Refresh"
+	Refresh.Parent = Main
+	Refresh.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+	Refresh.BorderSizePixel = 0
+	Refresh.Size = UDim2.new(0, 200, 0, 49)
+	Refresh.Font = Enum.Font.SourceSans
+	Refresh.Text = "Refresh"
+	Refresh.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Refresh.TextScaled = true
+	Refresh.TextSize = 14.000
+	Refresh.TextWrapped = true
+
+	Sample.Name = "Sample"
+	Sample.Parent = Main
+	Sample.BackgroundColor3 = Color3.fromRGB(88, 88, 88)
+	Sample.BorderColor3 = Color3.fromRGB(81, 81, 81)
+	Sample.BorderSizePixel = 0
+	Sample.Size = UDim2.new(0, 200, 0, 49)
+	Sample.Visible = false
+	Sample.Font = Enum.Font.SourceSans
+	Sample.Text = "no"
+	Sample.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Sample.TextScaled = true
+	Sample.TextSize = 14.000
+	Sample.TextWrapped = true
+
+	Toggle.Name = "Toggle"
+	Toggle.Parent = test
+	Toggle.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+	Toggle.BorderSizePixel = 0
+	Toggle.Position = UDim2.new(0, 0, 0.941562057, 0)
+	Toggle.Size = UDim2.new(0, 200, 0, 50)
+	Toggle.Font = Enum.Font.SourceSans
+	Toggle.Text = "Toggle"
+	Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Toggle.TextScaled = true
+	Toggle.TextSize = 14.000
+	Toggle.TextWrapped = true
+
+	Toggle.MouseButton1Click:Connect(function()
+		if Main.Visible then
+			Main.Visible = false
+		else
+			Main.Visible = true
+		end
+	end)
+
+	Refresh.MouseButton1Click:Connect(function()
+		for _, Child in pairs(Scroll:GetChildren()) do
+			if Child:IsA("TextButton") then
+				Child:Destroy()
+			end
+		end
+
+		for _, Player in pairs(game.Players:GetChildren()) do
+			local NewSample  = Sample:Clone()
+			NewSample.Parent = Scroll
+			NewSample.Name = Player.Name
+			NewSample.Text = Player.Name
+			NewSample.Visible = true
+
+			NewSample.MouseButton1Click:Connect(function()
+				workspace.Hosting.Join:InvokeServer(NewSample.Text)
+			end)
+		end
+	end)
+else
+	print("wrong game")
+end
